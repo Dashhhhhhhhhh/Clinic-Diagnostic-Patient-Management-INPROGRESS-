@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magayon Diagnostics: Diagnostic Laboratory Clinic</title>
+      <link rel="stylesheet" href="style.css"/>
+ <div class="clinic-title">Diagnostic and  Laboratory Clinic</div>
+</head>
+<body>
+    <div class ="login-container">
+        <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="userArea" placeholder="Username"/>
+        <input type="password" id="passArea" placeholder="Password"/>
+        <button id="loginBtn" type="submit">Login</button>
+    </form> 
+    <p id="errorMsg"></p>
+    </div>
+
+<div class="patient-registration">
+  <h2>Patient Registration</h2>
+  <form id="patientRegister">
+    <input type="text" id="fullName" placeholder="Fullname"/>
+    <input type="number" id="age" placeholder="Age" />
+
+    <fieldset>
+      <legend>Select Gender</legend>
+      <label>
+        <input type="radio" name="gender" value="male" /> Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female" /> Female
+      </label>
+    </fieldset>
+
+    <label for="birthDay">Date of Birth:</label><br>
+
+    <select id="birthMonth" name="birthMonth">
+        <option value="">Month</option>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+
+    <select id="birthDay" name="birthDay">
+        <option value="">Day</option>
+    </select>
+
+    <select id="birthYear" name="birthYear">
+        <option value="">Year</option>
+    </select>
+
+    <input type="text" id="emailAddress" placeholder="Email Address" />
+    <input type="text" id="address" placeholder="Address" />
+    <input type="text" id="initialDiagnosis" placeholder="Initial Diagnosis"/>
+
+    <button type="submit">Add Patient</button>
+  </form>
+</div>
+
+    <script src = script.js></script>
+</body>
+</html>
